@@ -26,6 +26,17 @@ body {
       </h2>
 <% end %>
 
+<div style="font-size: 3rem">
+<% case rand(3) %>
+<% when 0 %>
+<p style="text-align: center; color: #fff"><strong>_:(´ཀ`」 ∠);</strong></p>
+<% when 1 %>
+<p style="text-align: center; color: #fff"><strong>(´｡•ㅅ•｡`)</strong></p>
+<% when 2 %>
+<p style="text-align: center; color: #fff"><strong>(n╹ω╹)η</strong></p>
+<% end %>
+</div>
+
 <% if @az =~ /AZ-unknown/ and @text =~ /no backend found/ and @crystal =~ /no backend found/ %>
   <p style="text-align:center;"><%= image_tag "a-N-N.svg" %></p>
 <% end %>
